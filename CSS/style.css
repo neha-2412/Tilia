@@ -1,0 +1,381 @@
+*{
+  font-family: Open Sans, sans-serif;
+}
+:root{
+  --bs-color1: rgb(87, 149, 129);
+}
+.bg-color1{
+  background: var(--bs-color1);
+}
+.text-color1{
+  color: var(--bs-color1);
+}
+/* Header */
+#header{
+  z-index: 2;
+}
+.logo{
+   width: 80px;
+}
+/* Header */
+/* Home */
+.carousel-item{
+  position: relative;
+}
+.carousel-item:after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));
+}
+.carousel-caption{
+  width: 80%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  margin: 0px auto;
+}
+#carouselExampleCaptions{
+  z-index: 1;
+}
+/* Home */
+/* Options */
+.bg_img1{
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)) ,url(../Images/backgrounds/contact-page.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+.icon{
+  width: 85px;
+  height: 85px;
+  border: 1px solid var(--bs-color1);
+  padding: 14px 0px 0px 19px;
+  border-radius: 5px;
+}
+.o-img{
+  font-size: 50px;
+  color: var(--bs-color1);
+}
+/* Options */
+/* Portfolio */
+.name:hover{
+  color: var(--bs-color1);
+}
+/* Portfolio */
+/* Quote */
+.bg_img2{
+  background:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)) ,url(../Images/backgrounds/img-about1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+.q-img{
+  font-size: 45px;
+}
+/* Quote */
+/* Team */
+.t-icon{
+  width: 30px;
+  height: 30px;
+  background: var(--bs-color1);
+  color: #ffffff;
+  padding: 3px 8px;
+  transition: 1s;
+}
+.t-icon:hover{
+  background: #000000;
+  color: #ffffff;
+  padding: 3px 8px;
+}
+.t-img{
+  width: 150px;
+  transition: 1s;
+}
+.t-img:hover, .g-img:hover{
+  transform: translateY(-10px);
+}
+/* Team */
+/* Contact */
+.bg_img3{
+  background:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../Images/backgrounds/portfolio1-page.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+/* Contact */
+/* Gallery */
+.g-img{
+  transition: 1s;
+}
+/* Gallery */
+/* Effect1 */
+.effect1 {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.effect1 * {
+  box-sizing: border-box;
+  transition: all 0.35s ease;
+}
+.effect1 li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0.5em 1.5em;
+  padding: 0;
+}
+.effect1 a {
+  padding: 0.3em 0;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+.effect1 a:before,
+.effect1 a:after {
+  height: 3px;
+  position: absolute;
+  content: '';
+  transition: all 0.35s ease;
+  background-color: var(--bs-color1);
+  width: 0;
+}
+.effect1 a:before {
+  top: 0;
+  left: 0;
+}
+.effect1 a:after {
+  bottom: 0;
+  right: 0;
+}
+.effect1 a:hover{
+  color: #ffffff;
+}
+.effect1 a:hover:before,
+.effect1 a:hover:after {
+  width: 100%;
+}
+/* Effect1 */
+/* Effect2 */
+.effect2 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  color: var(--bs-color1);
+  font-size: 16px;
+  background-color: #000000;
+  box-sizing: border-box;
+  transform: translateZ(0);
+}
+.effect2 *,
+.effect2 *:before,
+.effect2 *:after {
+  transition: all 0.4s ease;
+}
+.effect2 img {
+  max-width: 100%;
+  backface-visibility: hidden;
+  vertical-align: top;
+}
+.effect2:hover img,
+.effect2.hover img {
+  zoom: 1;
+  filter: alpha(opacity=70);
+  opacity: 0.7;
+  transform: scale(1.2);
+}
+/* Effect2 */
+/* Effect3 */
+.effect3 {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1px;
+  width: 100%;
+  color: #ffffff;
+  text-align: left;
+  font-size: 16px;
+  transform: translateZ(0);
+  text-transform: uppercase;
+  box-shadow: none !important;
+}
+.effect3:first-of-type {
+  margin-left: 10px;
+}
+.effect3 * {
+  box-sizing: border-box;
+  transition: all 0.35s ease;
+}
+.effect3 .image {
+  padding: 15px 0;
+}
+.effect3 img {
+  max-width: 100%;
+  backface-visibility: hidden;
+  vertical-align: top;
+  position: relative;
+  opacity: 1;
+}
+.effect3 figcaption {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 800px;
+  background-color: var(--bs-color1);
+  transform: rotate(90deg) translateY(0%);
+  transform-origin: 0 0;
+  transition-delay: 0;
+}
+.effect3 h4 {
+  width: 100%;
+  margin: 0;
+  padding: 15px 20px;
+  line-height: 1.1em;
+  font-weight: 900;
+}
+.effect3 i {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 8px 20px;
+  font-size: 26px;
+}
+.effect3 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.effect3:hover img,
+.effect3.hover img {
+  transform: scale(1.2);
+  opacity: 1;
+}
+.effect3:hover figcaption,
+.effect3.hover figcaption {
+  transition-delay: 0.15s;
+  transform: rotate(90deg) translateY(-100%);
+}
+/* Effect3 */
+/* Effect4 */
+.effect4 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  font-size: 16px;
+  margin: 0px;
+}
+.effect4 *,
+.effect4 *:before,
+.effect4 *:after {
+  box-sizing: border-box;
+  transition: all 0.35s ease;
+}
+.effect4:before {
+  position: absolute;
+  content: '';
+  background-color: #ffffff;
+  opacity: 0;
+  transition: all 0.35s ease;
+}
+.effect4 img {
+  max-width: 100%;
+  vertical-align: top;
+}
+.effect4 .icons {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.effect4 a {
+  margin: 2px;
+  opacity: 0;
+}
+.effect4 a i {
+  display: block;
+  font-size: 23.5px;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--bs-color1);
+  text-align: center;
+  color: #000000;
+}
+.effect4 a i:hover {
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+}
+.effect4 a:first-of-type {
+  transform: translateY(-100%);
+}
+.effect4 a:last-of-type {
+  transform: translateY(100%);
+}
+.effect4:hover:before,
+.effect4.hover:before {
+  opacity: 0.5;
+}
+.effect4:hover a,
+.effect4.hover a {
+  opacity: 1;
+  transform: translateX(0);
+}
+/* Effect4 */
+/* Effect5 */
+.effect5 {
+  border: none;
+  background-color: var(--bs-color1);
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  line-height: 2.7em;
+  font-weight: 600;
+  font-size: 1em;
+  outline: none;
+  position: relative;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+.effect5:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  right: 100%;
+  border-radius: inherit;
+  background-color: rgba(255, 255, 255, 0.15);
+  transition: all 0.3s;
+}
+.effect5:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  transform: translateY(5px);
+  background-color: inherit;
+  border-radius: 10px;
+  z-index: -1;
+  box-shadow: inset 0 -6px 10px rgba(0, 0, 0, 0.75);
+}
+.effect5:hover:after,
+.effect5.hover:after {
+  right: 0;
+}
+/* Effect5 */
